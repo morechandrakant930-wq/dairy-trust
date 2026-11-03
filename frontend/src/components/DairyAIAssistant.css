@@ -1,0 +1,180 @@
+.dairy-ai-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: #198754;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dairy-ai-box {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 350px;
+  height: 480px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9998;
+}
+
+.dairy-ai-header {
+  background: #198754;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.dairy-ai-header h3 {
+  font-size: 17px;
+  margin: 0 0 5px;
+}
+
+.dairy-ai-header small {
+  font-size: 11px;
+}
+
+.dairy-ai-header select {
+  max-width: 105px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.dairy-ai-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f5f7f6;
+}
+
+.dairy-ai-welcome {
+  text-align: center;
+  margin-top: 90px;
+  color: #444;
+}
+
+.dairy-ai-message {
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  max-width: 85%;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.dairy-ai-message.user {
+  background: #198754;
+  color: white;
+  margin-left: auto;
+}
+
+.dairy-ai-message.bot {
+  background: white;
+  color: #222;
+  margin-right: auto;
+}
+
+.dairy-ai-input {
+  display: flex;
+  padding: 10px;
+  gap: 8px;
+  border-top: 1px solid #ddd;
+}
+
+.dairy-ai-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.dairy-ai-input button {
+  width: 42px;
+  border: none;
+  border-radius: 50%;
+  background: #198754;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dairy-ai-input button:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  .dairy-ai-box {
+    right: 10px;
+    bottom: 85px;
+    width: calc(100% - 20px);
+    height: 70vh;
+  }
+
+  .dairy-ai-toggle {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+
+.dairy-ai-voice-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid #e5e7eb;
+}
+
+.dairy-ai-voice-controls button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 16px;
+  background: #e8f5e9;
+  color: #176b35;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dairy-ai-voice-controls button:hover {
+  background: #c8e6c9;
+}
+
+.dairy-ai-voice-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dairy-ai-voice-controls button.voice-active {
+  background: #ffe0e0;
+  color: #c62828;
+}
+
+.dairy-ai-voice-controls span {
+  font-size: 12px;
+  color: #176b35;
+  font-weight: 600;
+}
+
+.dairy-ai-message {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

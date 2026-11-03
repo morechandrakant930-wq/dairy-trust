@@ -1,0 +1,153 @@
+
+.admin-farmers-page {
+  padding: 28px 36px;
+  color: #18352a;
+}
+
+.admin-farmers-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.admin-farmers-heading p {
+  color: #168052;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.admin-farmers-heading h1 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.admin-farmers-heading span {
+  color: #718078;
+  font-size: 14px;
+}
+
+.admin-farmers-heading button {
+  padding: 11px 18px;
+  border: 1px solid #dce8e0;
+  border-radius: 9px;
+  background: white;
+  cursor: pointer;
+}
+
+.admin-farmer-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 310px;
+  padding: 22px;
+  margin-bottom: 24px;
+  background: #eaf6ef;
+  border: 1px solid #d7ebdf;
+  border-radius: 14px;
+}
+
+.admin-farmer-summary span {
+  color: #527463;
+  font-size: 13px;
+}
+
+.admin-farmer-summary h2 {
+  margin: 10px 0 0;
+  font-size: 30px;
+}
+
+.admin-farmer-summary .farmer-summary-icon {
+  font-size: 30px;
+}
+
+.admin-farmer-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.admin-farmer-toolbar input {
+  width: min(100%, 480px);
+  padding: 13px 15px;
+  border: 1px solid #dce8e0;
+  border-radius: 9px;
+  outline: none;
+}
+
+.admin-farmer-toolbar input:focus {
+  border-color: #168052;
+}
+
+.admin-farmer-toolbar span {
+  color: #718078;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.admin-farmer-table-wrap {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #e7eee9;
+  border-radius: 13px;
+}
+
+.admin-farmer-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.admin-farmer-table th,
+.admin-farmer-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #edf1ee;
+  font-size: 13px;
+}
+
+.admin-farmer-table th {
+  background: #f5f8f6;
+  color: #52695d;
+  font-size: 12px;
+}
+
+.admin-farmer-plan {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e5f5eb;
+  color: #168052;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.admin-farmer-message,
+.admin-farmer-error {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.admin-farmer-error {
+  color: #c0392b;
+}
+
+@media (max-width: 700px) {
+  .admin-farmers-page {
+    padding: 18px;
+  }
+
+  .admin-farmers-heading h1 {
+    font-size: 23px;
+  }
+
+  .admin-farmer-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

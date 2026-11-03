@@ -1,0 +1,31 @@
+/* MILK COLLECTION PAGE BACKGROUND */
+
+.milk-collection-page {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(246, 250, 247, 0.82),
+      rgba(246, 250, 247, 0.90)
+    ),
+    url('../assets/milk-collection-bg.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Keep collection form readable */
+.milk-collection-page .card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(20, 60, 40, 0.10);
+}
+
+@media (max-width: 768px) {
+  .milk-collection-page {
+    background-attachment: scroll;
+    background-position: center;
+  }
+}

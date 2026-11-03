@@ -1,0 +1,293 @@
+/* =========================================
+   DAIRY TRUST - FARMER DASHBOARD
+   Premium Professional UI
+========================================= */
+
+.farmer-dashboard {
+  min-height: 100vh;
+  color: #193b2d;
+  font-family: Inter, "Segoe UI", sans-serif;
+  
+  /* बॅकग्राउंड इमेज आणि लिनियर ग्रेडियंट */
+  background-image: linear-gradient(
+      rgba(246, 250, 247, 0.70),
+      rgba(246, 250, 247, 0.82)
+    ),
+    url('../assets/farmer-dashboard-bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* TOP NAVBAR */
+
+.farmer-dashboard-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  min-height: 76px;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid #e7eee9 !important;
+  box-shadow: 0 3px 16px rgba(20, 50, 35, 0.04) !important;
+  backdrop-filter: blur(12px);
+}
+
+.farmer-dashboard-brand {
+  color: #14583c !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  letter-spacing: -.6px;
+}
+
+.farmer-dashboard-navbar .btn {
+  min-height: 38px;
+  font-size: 12px;
+  font-weight: 650;
+  transition: all .2s ease;
+}
+
+.farmer-dashboard-navbar .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* MAIN CONTAINER */
+
+.farmer-dashboard-content {
+  max-width: 1120px !important;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+/* WELCOME HERO */
+
+.farmer-dashboard-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 205px;
+  padding: 32px !important;
+  border: none !important;
+  border-radius: 20px !important;
+  background: linear-gradient(115deg, rgba(16, 61, 45, 0.90) 0%, rgba(22, 128, 82, 0.90) 65%, rgba(32, 161, 107, 0.90) 100%) !important;
+  box-shadow: 0 12px 28px rgba(16, 90, 58, 0.13) !important;
+}
+
+.farmer-dashboard-hero::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  right: -55px;
+  top: -100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .07);
+  pointer-events: none;
+}
+
+.farmer-dashboard-hero h3 {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -.7px;
+}
+
+.farmer-dashboard-hero p {
+  color: #d7eee1 !important;
+}
+
+.farmer-dashboard-hero .badge {
+  font-size: 10px;
+  letter-spacing: .4px;
+  padding: 7px 12px !important;
+}
+
+/* GENERAL CARDS & TRANSPARENCY SO BG IMAGE IS VISIBLE */
+
+.farmer-dashboard-content .card {
+  border: 1px solid rgba(231, 238, 233, 0.8) !important;
+  border-radius: 17px !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 20px rgba(25, 55, 40, 0.06) !important;
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.farmer-dashboard-content .card:hover {
+  box-shadow: 0 9px 26px rgba(25, 55, 40, 0.1) !important;
+}
+
+/* KPI CARDS */
+
+.farmer-dashboard-kpi {
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.farmer-dashboard-kpi .card-body {
+  padding: 25px !important;
+}
+
+.farmer-dashboard-kpi small {
+  font-size: 10px !important;
+  letter-spacing: .8px;
+  color: #7b8d82 !important;
+}
+
+.farmer-dashboard-kpi h2 {
+  font-size: 29px;
+  letter-spacing: -.8px;
+}
+
+.farmer-dashboard-kpi:first-child {
+  border-left: 4px solid #168052 !important;
+}
+
+.farmer-dashboard-kpi:last-child {
+  border-left: 4px solid #3679c9 !important;
+}
+
+/* SECTION HEADINGS */
+
+.farmer-dashboard-content h4 {
+  font-size: 19px;
+  font-weight: 750 !important;
+  letter-spacing: -.4px;
+  color: #183e2e !important;
+}
+
+.farmer-dashboard-content h5 {
+  color: #183e2e;
+  font-weight: 750;
+}
+
+.farmer-dashboard-content .text-secondary {
+  color: #819087 !important;
+}
+
+/* COLLECTION TABLE */
+
+.farmer-dashboard-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e8eee9;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.farmer-dashboard-table {
+  min-width: 680px;
+  margin-bottom: 0 !important;
+  font-size: 12px;
+}
+
+.farmer-dashboard-table thead th {
+  padding: 15px 13px !important;
+  background: #f1f7f3 !important;
+  color: #65776c !important;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .55px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e4ece6 !important;
+}
+
+.farmer-dashboard-table tbody td {
+  padding: 14px 13px !important;
+  color: #43564a;
+  border-color: #edf2ee !important;
+  vertical-align: middle;
+}
+
+.farmer-dashboard-table tbody tr:hover {
+  background: rgba(247, 251, 248, 0.8);
+}
+
+.farmer-dashboard-table .badge {
+  font-size: 10px;
+  font-weight: 650;
+  padding: 6px 10px;
+}
+
+/* DISPUTE CARD */
+
+.farmer-dashboard-dispute {
+  border-left: 4px solid #e5a32a !important;
+}
+
+.farmer-dashboard-dispute h5 {
+  font-size: 17px;
+}
+
+.farmer-dashboard-dispute p {
+  font-size: 12px;
+}
+
+.farmer-dashboard-dispute .btn {
+  min-height: 38px;
+  font-size: 11px;
+  font-weight: 650;
+  transition: all .2s ease;
+}
+
+.farmer-dashboard-dispute .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* LOADING AND ERROR */
+
+.farmer-dashboard-content .alert {
+  border-radius: 13px !important;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* FOOTER */
+
+.farmer-dashboard-footer {
+  padding: 20px 0 10px;
+  color: #2b4537 !important;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* BUTTONS */
+
+.farmer-dashboard-content .btn {
+  border-radius: 9px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .farmer-dashboard {
+    background-attachment: scroll;
+  }
+
+  .farmer-dashboard-navbar {
+    padding: 13px 15px !important;
+  }
+
+  .farmer-dashboard-brand {
+    font-size: 18px !important;
+  }
+
+  .farmer-dashboard-content {
+    padding: 20px 15px 15px;
+  }
+
+  .farmer-dashboard-hero {
+    padding: 24px !important;
+    min-height: 175px;
+  }
+
+  .farmer-dashboard-hero h3 {
+    font-size: 22px;
+  }
+
+  .farmer-dashboard-kpi .card-body {
+    padding: 20px !important;
+  }
+
+  .farmer-dashboard-kpi h2 {
+    font-size: 24px;
+  }
+}

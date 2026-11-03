@@ -1,0 +1,294 @@
+
+/* =========================================
+   DAIRY TRUST - MILK REPORTS
+   Premium Professional Reports UI
+========================================= */
+
+.milk-reports-page {
+  min-height: 100vh;
+  padding: 30px 4% !important;
+  color: #193b2d;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(27, 128, 83, .08), transparent 30%),
+    linear-gradient(135deg, #f4f8f5, #edf4ef) !important;
+}
+
+/* HEADER */
+
+.milk-reports-page > header {
+  padding: 0 0 22px;
+  border-color: #dce8df !important;
+}
+
+.milk-reports-page header h2 {
+  color: #164b35 !important;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -.7px;
+}
+
+.milk-reports-page header small {
+  color: #718278 !important;
+  font-size: 12px;
+}
+
+.milk-reports-page header .btn {
+  padding: 10px 17px;
+  border-radius: 10px !important;
+  font-weight: 650;
+}
+
+/* COMMON CARDS */
+
+.milk-reports-page .card {
+  border: 1px solid #e3ece5 !important;
+  border-radius: 17px !important;
+  background: rgba(255, 255, 255, .94) !important;
+  box-shadow: 0 5px 20px rgba(24, 65, 43, .055) !important;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.milk-reports-page .card:hover {
+  box-shadow: 0 9px 26px rgba(24, 65, 43, .09) !important;
+}
+
+/* FILTER SECTION */
+
+.milk-reports-page > .card:first-of-type {
+  padding: 26px !important;
+}
+
+.milk-reports-page .form-label {
+  color: #536b5d !important;
+  font-size: 12px;
+  font-weight: 700 !important;
+}
+
+.milk-reports-page .form-control {
+  min-height: 43px;
+  border: 1px solid #dce8df;
+  border-radius: 10px !important;
+  background: #fbfdfb;
+  color: #254735;
+  font-size: 13px;
+}
+
+.milk-reports-page .form-control:focus {
+  border-color: #269568;
+  box-shadow: 0 0 0 3px rgba(38, 149, 104, .12);
+}
+
+.milk-reports-page .btn-success {
+  background: linear-gradient(120deg, #146b45, #219866) !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(25, 126, 79, .15);
+}
+
+.milk-reports-page .btn-success:hover {
+  background: #105c3a !important;
+  transform: translateY(-1px);
+}
+
+.milk-reports-page .btn-outline-secondary {
+  border-color: #d6e2d9;
+  color: #53685b;
+}
+
+/* REPORT TYPE BUTTONS */
+
+.milk-reports-page .rounded-pill {
+  font-weight: 650;
+}
+
+/* PERIODIC OVERVIEW */
+
+.milk-reports-page h5 {
+  color: #1a4933;
+  font-size: 18px;
+  font-weight: 800 !important;
+}
+
+.milk-reports-page .text-secondary {
+  color: #788a7e !important;
+}
+
+/* ACTION BUTTON */
+
+.milk-reports-page .btn-dark {
+  background: #193e2e !important;
+  border: none !important;
+  border-radius: 9px !important;
+}
+
+.milk-reports-page .btn-dark:hover {
+  background: #102f21 !important;
+  transform: translateY(-2px);
+}
+
+/* KPI CARDS */
+
+.milk-reports-page .row.g-3.mb-4 > .col-md-4 .card {
+  min-height: 125px;
+  padding: 22px !important;
+  border-left: 4px solid #1b8756 !important;
+}
+
+.milk-reports-page .row.g-3.mb-4 > .col-md-4:nth-child(2) .card {
+  border-left-color: #347bc5 !important;
+}
+
+.milk-reports-page .row.g-3.mb-4 > .col-md-4:nth-child(3) .card {
+  border-left-color: #687a70 !important;
+}
+
+.milk-reports-page .row.g-3.mb-4 .card small {
+  font-size: 11px;
+  font-weight: 700 !important;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+.milk-reports-page .row.g-3.mb-4 .card h3 {
+  margin-top: 8px;
+  font-size: 27px;
+  font-weight: 800 !important;
+}
+
+/* FARMER STATEMENT CARD */
+
+.milk-reports-page .card-header {
+  background: #f3f8f4 !important;
+  border-color: #e3ece5 !important;
+}
+
+.milk-reports-page .card-header h6 {
+  color: #1c4934 !important;
+  font-size: 15px;
+  font-weight: 800 !important;
+}
+
+.milk-reports-page .card-header small {
+  font-size: 11px;
+}
+
+.milk-reports-page .card-header .btn {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* SETTLEMENT BOX */
+
+.milk-reports-page .card-body > .bg-light {
+  background: #f5f9f6 !important;
+  border-color: #e1ebe3 !important;
+}
+
+.milk-reports-page .card-body > .bg-light small {
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.milk-reports-page .card-body > .bg-light .fs-5 {
+  font-size: 19px !important;
+}
+
+/* INPUTS AND SETTLEMENT */
+
+.milk-reports-page input[type="number"] {
+  min-height: 38px;
+}
+
+.milk-reports-page .card-body > .bg-light .btn-success {
+  min-height: 38px;
+  border-radius: 9px !important;
+}
+
+/* TABLES */
+
+.milk-reports-page .table-responsive {
+  border: 1px solid #e7eee8;
+  border-radius: 11px;
+}
+
+.milk-reports-page .table {
+  min-width: 720px;
+  margin-bottom: 0 !important;
+  font-size: 12px;
+}
+
+.milk-reports-page .table thead th {
+  padding: 13px 12px !important;
+  background: #edf5ef !important;
+  color: #5c7163 !important;
+  border-color: #e0eae2 !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.milk-reports-page .table tbody td {
+  padding: 12px !important;
+  color: #40594a;
+  border-color: #edf2ee !important;
+  vertical-align: middle;
+}
+
+.milk-reports-page .table tbody tr:hover {
+  background: #f4faf5;
+}
+
+/* BADGES */
+
+.milk-reports-page .badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 6px 10px;
+}
+
+/* ALERTS */
+
+.milk-reports-page .alert {
+  border-radius: 11px !important;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .milk-reports-page {
+    padding: 20px 14px !important;
+  }
+
+  .milk-reports-page > header {
+    align-items: flex-start !important;
+    gap: 15px;
+  }
+
+  .milk-reports-page header h2 {
+    font-size: 21px;
+  }
+
+  .milk-reports-page > .card:first-of-type {
+    padding: 18px !important;
+  }
+
+  .milk-reports-page .row.g-3.mb-4 > .col-md-4 .card {
+    min-height: 105px;
+  }
+
+  .milk-reports-page .row.g-3.mb-4 .card h3 {
+    font-size: 23px;
+  }
+
+  .milk-reports-page .card-body {
+    padding: 17px !important;
+  }
+
+  .milk-reports-page .d-flex.justify-content-between.mt-3 {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

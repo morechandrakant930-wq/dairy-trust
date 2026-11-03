@@ -1,0 +1,362 @@
+
+/* =========================================
+   DAIRY TRUST - OWNER DASHBOARD
+   Professional UI Design
+========================================= */
+
+.dairy-dashboard {
+  min-height: 100vh;
+  background: #f4f7f5 !important;
+  color: #172b23;
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+/* SIDEBAR */
+
+.dairy-dashboard-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 255px;
+  min-height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 25px 18px !important;
+  background: #103d2d !important;
+  border-right: 1px solid rgba(255,255,255,.08);
+  box-shadow: 5px 0 25px rgba(16,61,45,.08);
+}
+
+.dairy-dashboard-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dairy-dashboard-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.2);
+  border-radius: 10px;
+}
+
+.dairy-dashboard-sidebar h5 {
+  font-size: 20px;
+  letter-spacing: -.5px;
+}
+
+.dairy-dashboard-sidebar .badge {
+  color: #b8f4ce !important;
+  background: rgba(34,197,94,.14) !important;
+}
+
+.dairy-dashboard-sidebar .list-group {
+  gap: 7px !important;
+}
+
+.dairy-dashboard-sidebar .list-group-item {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px !important;
+  padding: 11px 13px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  transition: all .25s ease;
+}
+
+.dairy-dashboard-sidebar .list-group-item:not([style*="linear-gradient"]):hover {
+  background: rgba(255,255,255,.09) !important;
+  color: #fff !important;
+  transform: translateX(3px);
+}
+
+.dairy-dashboard-sidebar .list-group-item[style*="linear-gradient"] {
+  color: #fff !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,.12);
+}
+
+.dairy-dashboard-sidebar .list-group-item span {
+  width: 22px;
+  text-align: center;
+  font-size: 17px !important;
+}
+
+.dairy-dashboard-sidebar .btn {
+  min-height: 40px;
+  font-size: 12px;
+  transition: all .25s ease;
+}
+
+/* MAIN CONTENT */
+
+.dairy-dashboard-main {
+  min-height: 100vh;
+  margin-left: 255px;
+  width: calc(100% - 255px);
+  padding: 30px 36px !important;
+  overflow-x: hidden;
+}
+
+/* TOP NAVBAR */
+
+.dairy-dashboard-topbar {
+  min-height: 88px;
+  background: #fff;
+  border: 1px solid #e8eee9 !important;
+  border-radius: 16px !important;
+  padding: 19px 24px !important;
+  box-shadow: 0 4px 18px rgba(20,50,35,.035) !important;
+}
+
+.dairy-dashboard-topbar h3 {
+  font-size: 23px;
+  font-weight: 750 !important;
+  letter-spacing: -.6px;
+  color: #153c2c !important;
+}
+
+.dairy-dashboard-topbar small {
+  color: #82938a !important;
+}
+
+/* PLAN BADGE */
+
+.dairy-dashboard-topbar .badge {
+  background: #e7f5eb !important;
+  color: #17663d !important;
+  border: 1px solid #d2ead9;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* GENERAL CARDS */
+
+.dairy-dashboard-main .card {
+  border: 1px solid #e8eee9 !important;
+  border-radius: 17px !important;
+  box-shadow: 0 5px 22px rgba(25,55,40,.045) !important;
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.dairy-dashboard-main .card:hover {
+  box-shadow: 0 9px 28px rgba(25,55,40,.075) !important;
+}
+
+/* HERO CARD */
+
+.dairy-dashboard-hero {
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+  background: linear-gradient(115deg, #103d2d, #168052) !important;
+  padding: 35px !important;
+  min-height: 205px;
+}
+
+.dairy-dashboard-hero h3 {
+  font-size: 27px;
+  letter-spacing: -.7px;
+}
+
+.dairy-dashboard-hero p {
+  color: #d5e9dd !important;
+  font-size: 13px;
+}
+
+.dairy-dashboard-hero .btn {
+  border-radius: 9px !important;
+  font-size: 12px;
+  padding: 11px 20px !important;
+  transition: all .25s ease;
+}
+
+.dairy-dashboard-hero .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,.12);
+}
+
+/* SECTION HEADINGS */
+
+.dairy-dashboard-main h5 {
+  color: #183e2e;
+  letter-spacing: -.3px;
+}
+
+.dairy-dashboard-main .text-muted,
+.dairy-dashboard-main .text-secondary {
+  color: #819087 !important;
+}
+
+/* SUMMARY CARDS */
+
+.dairy-dashboard-main .bg-light {
+  background: #f7faf8 !important;
+}
+
+.dairy-dashboard-main .bg-light.border {
+  border-color: #e8eee9 !important;
+  transition: all .25s ease;
+}
+
+.dairy-dashboard-main .bg-light.border:hover {
+  background: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(25,55,40,.06);
+}
+
+.dairy-dashboard-main input,
+.dairy-dashboard-main select,
+.dairy-dashboard-main textarea {
+  border: 1px solid #dfe8e1;
+  border-radius: 9px !important;
+  min-height: 40px;
+  font-size: 13px;
+}
+
+.dairy-dashboard-main input:focus,
+.dairy-dashboard-main select:focus,
+.dairy-dashboard-main textarea:focus {
+  border-color: #269665;
+  box-shadow: 0 0 0 3px rgba(38,150,101,.11);
+}
+
+/* BUTTONS */
+
+.dairy-dashboard-main .btn {
+  border-radius: 9px;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.dairy-dashboard-main .btn-success {
+  background: #168052;
+  border-color: #168052;
+}
+
+.dairy-dashboard-main .btn-success:hover {
+  background: #10663f;
+  border-color: #10663f;
+  transform: translateY(-1px);
+}
+
+.dairy-dashboard-main .btn-primary {
+  background: #2865b5;
+  border-color: #2865b5;
+}
+
+/* TABLES */
+
+.dairy-dashboard-main .table-responsive {
+  border: 1px solid #e9efeb;
+  border-radius: 12px;
+}
+
+.dairy-dashboard-main .table {
+  font-size: 12px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.dairy-dashboard-main .table thead th {
+  background: #f2f7f3 !important;
+  color: #65776c;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5ede7;
+}
+
+.dairy-dashboard-main .table tbody td {
+  padding: 13px 12px;
+  border-color: #edf1ee;
+  color: #415449;
+}
+
+.dairy-dashboard-main .table-hover tbody tr:hover {
+  background: #f7fbf8;
+}
+
+/* ALERTS */
+
+.dairy-dashboard-main .alert {
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* ANIMATION */
+
+.dairy-dashboard-main .card {
+  animation: dairyFadeIn .4s ease both;
+}
+
+@keyframes dairyFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  .dairy-dashboard-sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .dairy-dashboard-main {
+    width: 100%;
+    margin-left: 0;
+    padding: 22px !important;
+  }
+
+  .dairy-dashboard-hero {
+    padding: 25px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dairy-dashboard-main {
+    padding: 14px !important;
+  }
+
+  .dairy-dashboard-topbar {
+    padding: 16px !important;
+  }
+
+  .dairy-dashboard-topbar h3 {
+    font-size: 19px;
+  }
+
+  .dairy-dashboard-hero h3 {
+    font-size: 22px;
+  }
+
+  .dairy-dashboard-main .card {
+    padding: 17px !important;
+  }
+}
+/* OWNER DASHBOARD BACKGROUND IMAGE */
+
+.dairy-dashboard {
+  background-image:
+    linear-gradient(
+      rgba(245, 250, 247, 0.78),
+      rgba(245, 250, 247, 0.88)
+    ),
+    url('./../assets/dairy-owner-bg.png') !important;
+
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+

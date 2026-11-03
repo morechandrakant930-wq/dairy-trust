@@ -1,0 +1,117 @@
+
+.dairies-page {
+  padding: 28px 36px;
+  color: #18352a;
+}
+
+.dairies-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.dairies-heading p {
+  color: #168052;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.dairies-heading h1 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.dairies-heading button {
+  padding: 11px 18px;
+  border: 1px solid #dce8e0;
+  border-radius: 9px;
+  background: white;
+  cursor: pointer;
+}
+
+.dairies-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  padding: 22px;
+  margin-bottom: 26px;
+  background: #eaf6ef;
+  border: 1px solid #d7ebdf;
+  border-radius: 14px;
+}
+
+.dairies-summary span {
+  color: #527463;
+  font-size: 13px;
+}
+
+.dairies-summary h2 {
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+
+.dairies-summary > span {
+  font-size: 30px;
+}
+
+.dairies-table-wrapper {
+  overflow-x: auto;
+  background: white;
+  border: 1px solid #e7eee9;
+  border-radius: 13px;
+}
+
+.dairies-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.dairies-table th,
+.dairies-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #edf1ee;
+  font-size: 13px;
+}
+
+.dairies-table th {
+  background: #f5f8f6;
+  color: #52695d;
+  font-size: 12px;
+}
+
+.dairy-plan {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e5f5eb;
+  color: #168052;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.dairies-message,
+.dairies-error {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.dairies-error {
+  color: #c0392b;
+}
+
+@media (max-width: 700px) {
+  .dairies-page {
+    padding: 18px;
+  }
+
+  .dairies-heading h1 {
+    font-size: 23px;
+  }
+}
