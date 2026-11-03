@@ -1,4 +1,9 @@
 {
+  "name": "dairytrust",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  },
   "dependencies": {
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.9"
